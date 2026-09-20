@@ -27,8 +27,6 @@ export class AurelianCalendar extends dnd5e.dataModels.calendar.CalendarData5e {
    */
   findHoliday(time=game.time.worldTime) {
     const components = typeof time === "number" ? this.timeToComponents(time) : time;
-    console.log("FINDING HOLIDAY FOR: ", components);
-    console.log("HOLIDAYS: ", this.holidays);
     return this.holidays
       .find(f => f.month === (components.month + 1) && f.day === (components.dayOfMonth + 1)) ?? null;
   }
@@ -39,14 +37,11 @@ export class AurelianCalendar extends dnd5e.dataModels.calendar.CalendarData5e {
 
   /** @inheritDoc */
   static formatAurelian(calendar, components, options) {
-
-    console.log("HELLO");
     
     const month = calendar.months.values[components.month];
     const year_descriptor = components.year < 0 ? "VÊA" : "DA";
     const day_number_addition = components.dayOfMonth === 0 ? "st" : components.dayOfMonth === 1 ? "nd" : components.dayOfMonth === 2 ? "rd" : "th";
     const holiday = calendar.findHoliday(components);
-    console.log("HOLIDAY: ", holiday);
     if ( holiday ) {
       return holiday.name + ` (${components.dayOfMonth + 1}${day_number_addition} ${month.name}) ${components.year}${year_descriptor}`;
     }
