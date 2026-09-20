@@ -19,7 +19,11 @@ This [FoundryVTT](https://foundryvtt.com) module adds some stuff to the calendar
 
 ## Features
 
-TODO
+Adds the Aurelian Seasonal Calendar, including holidays, as an option to the default 5e calendar. Choose the new formatter to display holidays.
+
+## TODOs
+
+- Moon Phases
 
 ## Contributing
 

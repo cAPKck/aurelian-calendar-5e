@@ -1,7 +1,7 @@
 {
     "id": "aurelian-calendar-5e",
     "title": "Aurelian Calendar for D&D 5e",
-    "version": "AUTOMATIC",
+    "version": "0.1.1",
     "description": "Extends the FoundryVTT calendar with custom months and dates.",
     "compatibility": {
         "minimum": "14",
@@ -37,7 +37,7 @@
     ],
     "url": "https://github.com/cAPKck/aurelian-calendar-5e",
     "manifest": "https://github.com/cAPKck/aurelian-calendar-5e/releases/latest/download/module.json",
-    "download": "AUTOMATIC",
+    "download": "https://github.com/cAPKck/aurelian-calendar-5e/releases/download/v0.1.1/aurelian-calendar-5e.zip",
     "license": "LICENSE",
     "readme": "README.md",
     "bugs": "https://github.com/cAPKck/aurelian-calendar-5e/issues",
